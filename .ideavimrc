@@ -1,0 +1,47 @@
+let mapleader=" "
+set number
+set relativenumber
+set incsearch
+set ideavimsupport=dialog,singleline
+set keep-english-in-normal
+set clipboard=unnamedplus
+set smoothscroll
+set ignorecase
+set smartcase
+set highlightedyank
+set scrolloff=10
+set commentary
+set NERDTree
+Plug 'justinmk/vim-sneak'
+nnoremap / /
+" Shortcuts
+nnoremap gb :action Back<CR>
+nnoremap gf :action Forward<CR>
+nnoremap gp :action ActivateProblemsViewToolWindow<CR>
+nnoremap <C-w> :action CloseContent<CR>
+" Leader + keys
+nnoremap <leader>a :action ShowIntentionActions<CR>
+nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>u :action ShowUsages<CR>
+nnoremap <leader>g :action Annotate<CR>
+nnoremap <leader>x :action CloseContent<CR>
+nnoremap <leader>e :action ActivateProjectToolWindow<CR>
+nnoremap <leader>r :action RenameElement<CR>
+nnoremap <leader>s :action SearchEverywhere<CR>
+nnoremap <leader>f :action FindInPath<CR>
+nnoremap <leader>h :action HideAllWindows<CR>
+nnoremap <leader>l :action ReformatCode<CR>
+nnoremap <leader>d :action GotoDeclaration<CR>
+nnoremap <leader>q :action QuickJavaDoc<CR>
+nnoremap <leader>i :action QuickImplementations<CR>
+nnoremap <leader>z :action ToggleDistractionFreeMode<CR>
+" Switch to specific tabs using Control + number
+nnoremap <C-1> :action GoToTab1<CR>
+nnoremap <C-2> :action GoToTab2<CR>
+nnoremap <C-3> :action GoToTab3<CR>
+nnoremap <C-4> :action GoToTab4<CR>
+nnoremap <C-5> :action GoToTab5<CR>
+nnoremap <C-6> :action GoToTab6<CR>
+nnoremap <C-7> :action GoToTab7<CR>
+nnoremap <C-8> :action GoToTab8<CR>
+nnoremap <C-9> :action GoToTab9<CR>
