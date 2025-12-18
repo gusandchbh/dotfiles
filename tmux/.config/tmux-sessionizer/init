@@ -1,0 +1,7 @@
+#!/bin/bash
+
+tmux send-keys -t 1 'nvim' C-m
+
+tmux new-window -t 2
+
+tmux select-window -t 1
