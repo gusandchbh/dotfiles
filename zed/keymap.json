@@ -1,0 +1,95 @@
+[
+	{
+		"context": "vim_mode == normal && !menu",
+		"bindings": {
+			"g b": "pane::GoBack",
+			"g f": "pane::GoForward",
+			"g p": "diagnostics::Deploy",
+			"ctrl-w": "pane::CloseActiveItem",
+			"space a": "agent::ToggleFocus",
+			"space b": "editor::ToggleBreakpoint",
+			"space c": "editor::ToggleCodeActions",
+			"space t": "terminal_panel::ToggleFocus",
+			"space u": "editor::FindAllReferences",
+			"space g": "editor::ToggleGitBlameInline",
+			"space x": "pane::CloseActiveItem",
+			"space X": "pane::CloseOtherItems",
+			"space e": "project_panel::ToggleFocus",
+			"space r": "editor::Rename",
+			"space f": "workspace::NewSearch",
+			"space s": "file_finder::Toggle",
+			"space l": "editor::Format",
+			"space d": "editor::GoToDeclaration",
+			"space i": "editor::GoToImplementation",
+			"space z": "workspace::ToggleCenteredLayout",
+			"space p": "projects::OpenRecent",
+			"space v": "zed::OpenSettingsFile"
+		}
+	},
+	{
+		"context": "vim_mode == visual && !menu",
+		"bindings": {
+			"space h": "git::FileHistory"
+		}
+	},
+	{
+		"context": "ProjectPanel && not_editing",
+		"bindings": {
+			"o": "project_panel::OpenPermanent"
+		}
+	},
+	{
+		"context": "Terminal",
+		"bindings": {
+			"escape": "workspace::FocusCenterPane"
+		}
+	},
+	{
+		"context": "Dock",
+		"bindings": {
+			"ctrl-w": "workspace::CloseActiveDock"
+		}
+	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"ctrl-t": "workspace::NewTerminal",
+			"ctrl-1": [
+				"pane::ActivateItem",
+				0
+			],
+			"ctrl-2": [
+				"pane::ActivateItem",
+				1
+			],
+			"ctrl-3": [
+				"pane::ActivateItem",
+				2
+			],
+			"ctrl-4": [
+				"pane::ActivateItem",
+				3
+			],
+			"ctrl-5": [
+				"pane::ActivateItem",
+				4
+			],
+			"ctrl-6": [
+				"pane::ActivateItem",
+				5
+			],
+			"ctrl-7": [
+				"pane::ActivateItem",
+				6
+			],
+			"ctrl-8": [
+				"pane::ActivateItem",
+				7
+			],
+			"ctrl-9": [
+				"pane::ActivateItem",
+				8
+			]
+		}
+	}
+]

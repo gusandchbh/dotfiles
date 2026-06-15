@@ -1,0 +1,69 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+	"icon_theme": "JetBrains New UI Icons (Dark)",
+	"disable_ai": true,
+	"agent_servers": {},
+	"agent": {
+		"dock": "right"
+	},
+	"language_models": {
+		"opencode": {
+			"show_zen_models": true
+		}
+	},
+	"telemetry": {
+		"diagnostics": false,
+		"metrics": false
+	},
+	"vim_mode": true,
+	"base_keymap": "JetBrains",
+	"buffer_font_family": "JetBrains Mono",
+	"ui_font_size": 16,
+	"buffer_font_size": 15,
+	"autosave": {
+		"after_delay": {
+			"milliseconds": 300
+		}
+	},
+	"format_on_save": "on",
+	"languages": {
+		"Go": {
+			"language_servers": [
+				"gopls"
+			],
+			"formatter": "language_server",
+			"code_actions_on_format": {
+				"source.organizeImports": true
+			}
+		}
+	},
+	"relative_line_numbers": "enabled",
+	"gutter": {
+		"line_numbers": true
+	},
+	"search": {
+		"case_sensitive": false
+	},
+	"use_smartcase_search": true,
+	"vertical_scroll_margin": 10,
+	"vim": {
+		"use_system_clipboard": "always",
+		"use_smartcase_find": true,
+		"highlight_on_yank_duration": 200
+	},
+	"project_panel": {
+		"dock": "left"
+	},
+	"theme": {
+		"mode": "system",
+		"light": "Gruvbox Light",
+		"dark": "Gruvbox Dark"
+	}
+}

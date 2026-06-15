@@ -2,8 +2,6 @@ let mapleader=" "
 set number
 set relativenumber
 set incsearch
-set ideavimsupport=dialog,singleline
-set keep-english-in-normal
 set clipboard=unnamedplus
 set smoothscroll
 set ignorecase
@@ -12,7 +10,6 @@ set highlightedyank
 set scrolloff=10
 set commentary
 set NERDTree
-Plug 'justinmk/vim-sneak'
 nnoremap / /
 " Shortcuts
 nnoremap gb :action Back<CR>
@@ -21,20 +18,30 @@ nnoremap gp :action ActivateProblemsViewToolWindow<CR>
 nnoremap <C-w> :action CloseContent<CR>
 " Leader + keys
 nnoremap <leader>a :action ShowIntentionActions<CR>
+nnoremap <leader>b :action ToggleLineBreakpoint<CR>
 nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
 nnoremap <leader>u :action ShowUsages<CR>
 nnoremap <leader>g :action Annotate<CR>
 nnoremap <leader>x :action CloseContent<CR>
+nnoremap <leader>X :action CloseAllEditorsButActive<CR>
 nnoremap <leader>e :action ActivateProjectToolWindow<CR>
 nnoremap <leader>r :action RenameElement<CR>
-nnoremap <leader>s :action SearchEverywhere<CR>
 nnoremap <leader>f :action FindInPath<CR>
-nnoremap <leader>h :action HideAllWindows<CR>
 nnoremap <leader>l :action ReformatCode<CR>
 nnoremap <leader>d :action GotoDeclaration<CR>
-nnoremap <leader>q :action QuickJavaDoc<CR>
 nnoremap <leader>i :action QuickImplementations<CR>
 nnoremap <leader>z :action ToggleDistractionFreeMode<CR>
+vnoremap <leader>h :action Vcs.ShowHistoryForBlock<CR>
+nnoremap <leader>s :action SelectInProjectView<CR>
+nnoremap <leader>p :action OpenRecentProject<CR>
+nnoremap <leader>v :e ~/.ideavimrc<CR>
+nnoremap <leader>R :source ~/.ideavimrc<CR>
+
+map <Leader>pf <action>(com.mituuz.fuzzier.Fuzzier)
+map <Leader>gf <action>(com.mituuz.fuzzier.FuzzierVCS)
+map <Leader>mf <action>(com.mituuz.fuzzier.FuzzyMover)
+map <Leader>ff <action>(com.mituuz.fuzzier.FuzzyGrepCaseInsensitive)
+
 " Switch to specific tabs using Control + number
 nnoremap <C-1> :action GoToTab1<CR>
 nnoremap <C-2> :action GoToTab2<CR>
